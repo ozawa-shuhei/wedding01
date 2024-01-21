@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="https://use.typekit.net/blp3art.css">
+        <meta name="viewport" content="width=device-width,intial-scale=1.0">
+        <title>招待状に回答する</title>
+        <link rel="stylesheet" href="css/slick.css"/>
+        <link rel="stylesheet" href="css/slick-theme.css"/>
+        <link rel="stylesheet" href="css/style.css"/>
+    </head>
+    <body class="body-style">
+        <div class="back-color">
+            <div class="header-setting">
+                <img class="header-img" src="images/form_header.jpg">
+                <img class="header-title" src="images/form-title.png">
+            </div>    
+        
+        <p class="form-title">ゲスト様入力項目</p> 
+        <form action="https://docs.google.com/forms/u/0/d/e/1FAIpQLScEUDDRwgJVFSQke8u2141fC-WRgzQ9qxdDnDzCOyMNSitdYQ/formResponse" method="POST" target="hidden_iframe" onsubmit="submitted=true;">
+            <div class="scroll_left form-item">
+                <div class="input-area style-attend oparadio">
+                    <input name="entry.1275419724" type="radio" id="id-select_attend" class="radio" required><label for="id-select_attend" class="margin">ご出席</label>
+                    <input name="entry.1275419724" type="radio" id="id-select_absent" class="radio"><label for="id-select_absent" class="margin">ご欠席</label>
+                </div>
+            </div>
+            <div class="form-item">
+                <label class="scroll_left form_label">お名前<span class="form_required">*</span></label>
+                <div class="scroll_left input-area">
+                    <label class="ef">
+                        <input name="entry.360421792" type="text" id="id-name" placeholder="山田　太郎" required>
+                    </label>
+                </div>
+            </div>
+            <div class="form-item">
+                <label class="scroll_left form_label">ふりがな<span class="form_required">*</span></label>
+                <div class="scroll_left input-area">
+                    <label class="ef">
+                        <input name="entry.422243555" type="text" id="id-furi" placeholder="やまだ　たろう" required>
+                    </label>
+                </div>
+            </div>
+            <div class="form-item">
+                <label class="scroll_left form_label">ゲスト<span class="form_required">*</span></label>
+                <div class="scroll_left input-area style-guest">
+                    <input name="entry.1916334863" type="radio" id="id-select_groom" class="radio" required><label for="id-select_groom" class="border" required>新郎ゲスト</label>
+                    <input name="entry.1916334863" type="radio" id="id-select_bride" class="radio"><label for="id-select_bride" class="border">新婦ゲスト</label>
+                </div>
+            </div>
+            <div class="form-item">
+                <label class="scroll_left form_label">郵便番号<span class="form_required">*</span></label>
+                <div class="scroll_left input-area">
+                    <label class="ef">
+                        <input name="entry.2124567779" type="text" id="id-yubin" placeholder="123-456" required>
+                    </label>
+                </div>
+            </div>
+            <div class="form-item">
+                <label class="scroll_left form_label">住所<span class="form_required">*</span></label>
+                <div class="scroll_left input-area">
+                    <label class="ef">
+                        <input name="entry.759378786" type="text" id="id-address" placeholder="東京都立川市" required>    
+                    </label>
+                </div>
+            </div>
+            <div class="form-item">
+                <label class="scroll_left form_label">電話番号<span class="form_required">*</span></label>
+                <div class="scroll_left input-area">
+                    <label class="ef">
+                        <input name="entry.2141885894" type="text" id="id-number" placeholder="123-456" required>
+                    </label>
+                </div>
+            </div>
+            <div class="form-item_other">
+                <label class="scroll_left form_label">アレルギー等がございましたらご入力ください</label>
+                <div class="scroll_left input-area">
+                    <label class="ef">
+                        <input name="entry.120135225" type="text" id="id-allergy" placeholder="かに、えび、卵">
+                    </label>
+                </div>
+            </div>
+            <div class="scroll_left send_botton">
+                <input class="send-botton" type="submit" value="送信する">
+            </div>
+
+        
+        <script type="text/javascript">
+            var submitted = false;
+        </script>
+        <iframe name="hidden_iframe" id="hidden_iframe" style="display: none;" onload="if(submitted) {window.location='thanks.html';}"></iframe>
+        </form>
+    </div>
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script src="js/slick.min.js"></script>
+        <script src="js/common.js"></script>
+    </body>
+    <div class="footer">
+        <img class="footer-img" src="images/footer.jpg">
+        <p class="footer_name">SHUHEI<br>&<br>MIHO</p>
+    </div>
+</html>
